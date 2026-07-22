@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subscribe — Ask Angels</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a class="brand" href="/">ASK ANGELS</a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/#angels">Angels</a>
+        <a href="/soulcare">SoulCare</a>
+        <a href="/login">Login</a>
+        <a href="/subscribe" class="active">Subscribe</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Subscribe</h1>
+      <p class="lead">Choose a plan to unlock Angel lanes. Stripe integration coming soon — plans below are placeholders.</p>
+    </section>
+
+    <section class="section">
+      <div class="grid">
+        <article class="card plan-card">
+          <h2>Starter</h2>
+          <div class="plan-price">$9<span style="font-size:1rem;color:var(--muted)">/mo</span></div>
+          <ul class="plan-features">
+            <li>1 Angel lane</li>
+            <li>Basic sessions</li>
+            <li>Email support</li>
+          </ul>
+          <button class="btn secondary" type="button" onclick="alert('Stripe checkout coming soon.')">Select Plan</button>
+        </article>
+        <article class="card plan-card featured">
+          <span class="plan-badge">POPULAR</span>
+          <h2>Kingdom</h2>
+          <div class="plan-price">$29<span style="font-size:1rem;color:var(--muted)">/mo</span></div>
+          <ul class="plan-features">
+            <li>All 3 Angel lanes</li>
+            <li>Unlimited sessions</li>
+            <li>Priority support</li>
+            <li>SoulCare access</li>
+          </ul>
+          <button class="btn" type="button" onclick="alert('Stripe checkout coming soon.')">Select Plan</button>
+        </article>
+        <article class="card plan-card">
+          <h2>Household</h2>
+          <div class="plan-price">$79<span style="font-size:1rem;color:var(--muted)">/mo</span></div>
+          <ul class="plan-features">
+            <li>Up to 5 members</li>
+            <li>All Angel lanes</li>
+            <li>Family onboarding</li>
+            <li>Dedicated support</li>
+          </ul>
+          <button class="btn secondary" type="button" onclick="alert('Stripe checkout coming soon.')">Select Plan</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-copy">Ask Angels</div>
+      <div class="footer-links">
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

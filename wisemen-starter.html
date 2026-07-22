@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Wise Men Group</title>
+  <style>
+    :root{--bg:#f5f0e8;--surface:#fffdf9;--surface2:#eee5d5;--text:#251f16;--muted:#6f6555;--gold:#92722c;--border:rgba(146,114,44,.22)}
+    *{box-sizing:border-box}body{margin:0;font-family:Georgia,serif;background:var(--bg);color:var(--text)}header,section,footer{width:min(1080px,calc(100% - 32px));margin:0 auto}header{padding:28px 0 10px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .brand{font-size:1.35rem;font-weight:700}.pill{border:1px solid var(--border);padding:10px 14px;border-radius:999px;color:var(--gold);text-decoration:none}.hero{padding:54px 0 26px}h1{font-size:clamp(2.3rem,7vw,4.5rem);line-height:1.06;margin:0 0 14px}.lead{max-width:760px;color:var(--muted);line-height:1.7}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin:32px 0}.card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:22px}.card h2{margin-top:0;color:var(--gold)}.card p{color:var(--muted);line-height:1.6}
+    .banner{background:var(--surface2);border-left:4px solid var(--gold);padding:16px 18px;border-radius:12px;color:var(--muted)} footer{padding:24px 0 42px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">THE WISE MEN GROUP</div>
+    <a class="pill" href="https://thewisemen.co" target="_blank" rel="noopener noreferrer">Main Site</a>
+  </header>
+  <section class="hero">
+    <h1>Order, strategy, and Kingdom counsel for families and builders.</h1>
+    <p class="lead">Starter page for The Wise Men Group with room for consulting, family recruitment, teachings, and Angel-powered strategy services.</p>
+    <div class="banner">This can be expanded with a Kingdom Recruits Families application flow, QR routing, and a Wise Guys Angel offer.</div>
+  </section>
+  <section class="grid">
+    <article class="card"><h2>Consulting</h2><p>Executive and ministry strategy support for builders, leaders, and organizations.</p></article>
+    <article class="card"><h2>Family Recruitment</h2><p>Onboarding lane for entire households, designed around order, mission, and shared commitment.</p></article>
+    <article class="card"><h2>Wise Guys Angel</h2><p>Advisor lane blending business structure and Kingdom wisdom for decisions that shape institutions.</p></article>
+  </section>
+  <footer>Built as a deployment-ready starter shell for Vercel and later Stripe integration.</footer>
+</body>
+</html>

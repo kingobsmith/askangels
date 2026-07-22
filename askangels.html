@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ask Angels</title>
+  <style>
+    :root { --bg:#0a0a0a; --panel:#151515; --panel2:#1d1d1d; --gold:#d4af37; --goldSoft:#f2df9b; --text:#f5f0dc; --muted:#b6a98a; --border:rgba(212,175,55,.25); }
+    *{box-sizing:border-box} body{margin:0;font-family:Georgia,serif;background:linear-gradient(180deg,#080808 0%,#111 100%);color:var(--text)}
+    header,section,footer{width:min(1100px,calc(100% - 32px));margin:0 auto} header{padding:28px 0 12px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .brand{font-size:1.4rem;font-weight:700;letter-spacing:.04em}.pill{border:1px solid var(--border);padding:10px 14px;border-radius:999px;color:var(--goldSoft);text-decoration:none}
+    .hero{padding:60px 0 36px} h1{font-size:clamp(2.5rem,8vw,5rem);line-height:1.05;margin:0 0 16px}.lead{max-width:760px;color:var(--muted);font-size:1.1rem;line-height:1.7}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin:40px 0}.card{background:linear-gradient(180deg,var(--panel) 0%,var(--panel2) 100%);border:1px solid var(--border);border-radius:20px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .card h2{margin-top:0;color:var(--goldSoft);font-size:1.25rem}.card p{color:var(--muted);line-height:1.6}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+    .btn{background:var(--gold);color:#111;text-decoration:none;padding:12px 16px;border-radius:12px;font-weight:700}.btn.secondary{background:transparent;color:var(--goldSoft);border:1px solid var(--border)}
+    .banner{margin:18px 0 32px;padding:18px 20px;border-left:4px solid var(--gold);background:rgba(212,175,55,.07);border-radius:12px;color:var(--goldSoft)} footer{padding:24px 0 50px;color:var(--muted);font-size:.95rem}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">ASK ANGELS</div>
+    <a class="pill" href="https://askangels.co" target="_blank" rel="noopener noreferrer">Main Domain</a>
+  </header>
+  <section class="hero">
+    <h1>One system.<br>Three Angels.</h1>
+    <p class="lead">A black-and-gold launch page for the Angel platform, built to route visitors into writing, strategy, study, healing, and Kingdom order through one operating system.</p>
+    <div class="actions">
+      <a class="btn" href="#lanes">Explore Lanes</a>
+      <a class="btn secondary" href="https://robbinhoodent.com" target="_blank" rel="noopener noreferrer">Robbin’ Hood Ent</a>
+    </div>
+    <div class="banner">Rename this file to <strong>index.html</strong> for a quick Vercel static deployment.</div>
+  </section>
+  <section id="lanes">
+    <div class="grid">
+      <article class="card"><h2>Robbin’ Hood Angel</h2><p>Scribe voice for artists, authors, testimonies, lyrics, and sermons. This is the fastest revenue lane.</p></article>
+      <article class="card"><h2>Wise Guys Angel</h2><p>Advisory lane for founders, pastors, and builders who need strategy, structure, growth, and decision support.</p></article>
+      <article class="card"><h2>The Bridge Angel</h2><p>Support for pastors and believers with sermon prep, study guidance, and practical spiritual help.</p></article>
+    </div>
+  </section>
+  <footer>Powered by The Wise Men Group, Robbin’ Hood Entertainment, and the Kingdom ecosystem.</footer>
+</body>
+</html>

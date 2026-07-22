@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — Ask Angels</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a class="brand" href="/">ASK ANGELS</a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/#angels">Angels</a>
+        <a href="/soulcare">SoulCare</a>
+        <a href="/login" class="active">Login</a>
+        <a href="/subscribe">Subscribe</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Login</h1>
+      <p class="lead">Sign in to access your Angel lanes and saved sessions.</p>
+    </section>
+
+    <div class="form-card">
+      <form action="#" method="post" onsubmit="event.preventDefault(); alert('Login coming soon.');">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Your password" required />
+        </div>
+        <button class="btn" type="submit" style="width:100%">Sign In</button>
+      </form>
+      <p class="form-note">No account yet? <a href="/subscribe">Subscribe</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-copy">Ask Angels</div>
+      <div class="footer-links">
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

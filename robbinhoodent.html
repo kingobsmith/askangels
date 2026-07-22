@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robbin' Hood Angel — Ask Angels</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <style>
+    .player { background: linear-gradient(180deg, var(--panel), var(--panel2)); border: 1px solid var(--border); border-radius: 20px; padding: 24px; margin: 30px 0; }
+    .tracks { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; margin: 26px 0 34px; }
+    .track { background: linear-gradient(180deg, var(--panel), var(--panel2)); border: 1px solid var(--border); border-radius: 20px; padding: 20px; }
+    .track h3 { margin: 0 0 8px; color: var(--goldSoft); }
+    .track p { margin: 0 0 14px; color: var(--muted); line-height: 1.6; }
+    .chat textarea { width: 100%; min-height: 150px; border-radius: 14px; border: 1px solid var(--border); background: #0f0f0f; color: var(--text); padding: 14px; font-family: inherit; }
+    .chat { background: linear-gradient(180deg, var(--panel), var(--panel2)); border: 1px solid var(--border); border-radius: 20px; padding: 24px; margin-bottom: 38px; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a class="brand" href="/">ASK ANGELS</a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/#angels">Angels</a>
+        <a href="/soulcare">SoulCare</a>
+        <a href="/login">Login</a>
+        <a href="/subscribe">Subscribe</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card-icon">🎤</div>
+      <h1>Robbin' Hood Angel</h1>
+      <p class="lead">Prophetic music, Kingdom media, and a creative copilot for testimonies, songs, scripts, books, and artist direction.</p>
+    </section>
+
+    <section class="player">
+      <div class="pulse"></div>
+      <h2>The Take Over</h2>
+      <p class="lead">Featured song preview and donation-based album offers.</p>
+      <div class="actions">
+        <a class="btn" href="#">Buy Full Album</a>
+        <a class="btn secondary" href="#">Donate Per Track</a>
+      </div>
+    </section>
+
+    <section class="tracks">
+      <article class="track"><h3>Track 1</h3><p>Sample preview block for the first song.</p><a class="btn secondary" href="#">Preview</a></article>
+      <article class="track"><h3>Track 2</h3><p>Sample preview block for the second song.</p><a class="btn secondary" href="#">Preview</a></article>
+      <article class="track"><h3>Track 3</h3><p>Sample preview block for the third song.</p><a class="btn secondary" href="#">Preview</a></article>
+      <article class="track"><h3>Track 4</h3><p>Continue this pattern until all 11 songs are listed.</p><a class="btn secondary" href="#">Preview</a></article>
+    </section>
+
+    <section class="chat">
+      <h2>Creative Session</h2>
+      <p class="lead">Tell Angel what you need written, shaped, or developed.</p>
+      <textarea placeholder="Tell Angel what you need written, shaped, or developed..."></textarea>
+      <div class="actions">
+        <a class="btn" href="/login">Start Writing</a>
+        <a class="btn secondary" href="/">Back to Ask Angels</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-copy">Robbin' Hood Entertainment</div>
+      <div class="footer-links">
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
