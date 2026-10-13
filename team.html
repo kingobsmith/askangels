@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Chat — Ask Angels</title>
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="/css/team.css" />
+</head>
+<body>
+  <!-- Sign in / create account -->
+  <section id="auth-view" class="center-view" hidden>
+    <div class="auth-card">
+      <div class="brand">ASK ANGELS</div>
+      <h1>Team Chat</h1>
+      <p class="muted">For GROOVV executives, employees and interns. New accounts are approved by the CEO.</p>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-mode="signin" type="button">Sign in</button>
+        <button class="tab" data-mode="signup" type="button">Create account</button>
+      </div>
+      <form id="auth-form">
+        <label class="field" id="name-field" hidden>Full name
+          <input id="auth-name" type="text" autocomplete="name" placeholder="Your full name" />
+        </label>
+        <label class="field">Email
+          <input id="auth-email" type="email" autocomplete="email" required placeholder="you@example.com" />
+        </label>
+        <label class="field">Password
+          <input id="auth-password" type="password" autocomplete="current-password" required minlength="8" placeholder="At least 8 characters" />
+        </label>
+        <button class="btn" type="submit" id="auth-submit">Sign in</button>
+        <p class="form-msg" id="auth-msg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Waiting for approval -->
+  <section id="pending-view" class="center-view" hidden>
+    <div class="auth-card">
+      <div class="brand">ASK ANGELS</div>
+      <h1>Almost there</h1>
+      <p class="muted">Your account is waiting for approval. You'll be able to join the conversation as soon as the CEO approves it.</p>
+      <button class="btn secondary" type="button" data-action="recheck">Check again</button>
+      <button class="link-btn" type="button" data-action="signout">Sign out</button>
+    </div>
+  </section>
+
+  <!-- Missing configuration -->
+  <section id="setup-view" class="center-view" hidden>
+    <div class="auth-card">
+      <div class="brand">ASK ANGELS</div>
+      <h1>Setup needed</h1>
+      <p class="muted">Team Chat isn't connected to its database yet. Add the Supabase settings described in TEAM-CHAT-SETUP.md, then reload.</p>
+    </div>
+  </section>
+
+  <!-- The chat -->
+  <div id="app-view" class="app" hidden>
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-head">
+        <div class="brand">ASK ANGELS</div>
+        <button class="icon-btn only-mobile" type="button" data-action="close-sidebar" aria-label="Close menu">✕</button>
+      </div>
+      <div class="side-label">Rooms</div>
+      <nav id="room-list" class="room-list"></nav>
+      <div id="admin-panel" hidden>
+        <div class="side-label">Waiting for approval <span id="pending-count" class="count"></span></div>
+        <div id="pending-list" class="pending-list"></div>
+      </div>
+      <div class="me">
+        <div class="avatar" id="me-avatar"></div>
+        <div class="me-text">
+          <div class="me-name" id="me-name"></div>
+          <div class="me-title" id="me-title"></div>
+        </div>
+        <button class="icon-btn" type="button" data-action="edit-profile" aria-label="Edit profile" title="Edit name and title">✎</button>
+        <button class="icon-btn" type="button" data-action="signout" aria-label="Sign out" title="Sign out">⎋</button>
+      </div>
+    </aside>
+
+    <main class="chat">
+      <header class="chat-head">
+        <button class="icon-btn only-mobile" type="button" data-action="open-sidebar" aria-label="Open menu">☰</button>
+        <div>
+          <h2 id="room-name"></h2>
+          <div class="muted small" id="room-desc"></div>
+        </div>
+      </header>
+      <div id="messages" class="messages" aria-live="polite"></div>
+      <div id="typing" class="typing" hidden></div>
+      <form id="composer" class="composer">
+        <div class="mention-row">
+          <button type="button" class="chip claude" data-mention="@Claude">@Claude</button>
+          <button type="button" class="chip angel" data-mention="@Angel">@Angel</button>
+          <span class="muted small hint">Mention @Claude or @Angel to bring them in. Enter sends, Shift+Enter adds a line.</span>
+        </div>
+        <div class="composer-row">
+          <textarea id="composer-input" rows="1" maxlength="8000" placeholder="Write a message…" aria-label="Message"></textarea>
+          <button class="btn send" type="submit" aria-label="Send">Send</button>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <!-- Edit profile -->
+  <dialog id="profile-dialog">
+    <form method="dialog" id="profile-form">
+      <h3>Your profile</h3>
+      <p class="muted small">Your name and title appear on every message you send.</p>
+      <label class="field">Full name <input id="profile-name" type="text" required /></label>
+      <label class="field">Title <input id="profile-title" type="text" placeholder="e.g. Trading Curriculum Fellow" /></label>
+      <div class="dialog-actions">
+        <button class="btn secondary" value="cancel" type="submit" formnovalidate>Cancel</button>
+        <button class="btn" value="save" type="submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="/js/team.js"></script>
+</body>
+</html>
