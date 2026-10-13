@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ask Angels</title>
+  <title>Ask Angels — Angel, Claude & Perplexity</title>
+  <meta name="description" content="AskAngels brings Angel, Claude and Perplexity together in one Kingdom-minded workspace. Home of the book Angel Intelligence, written by AI." />
   <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/home.css" />
 </head>
 <body>
   <nav class="navbar">
@@ -13,47 +15,95 @@
       <button class="nav-toggle" aria-label="Menu">☰</button>
       <div class="nav-links">
         <a href="/" class="active">Home</a>
-        <a href="/#angels">Angels</a>
+        <a href="/#assistants">Assistants</a>
+        <a href="/#book">The Book</a>
         <a href="/soulcare">SoulCare</a>
-        <a href="/login">Login</a>
+        <a href="/team">Team Chat</a>
         <a href="/subscribe">Subscribe</a>
+        <a href="https://askangel.pplx.app" target="_blank" rel="noopener noreferrer">Open Angel</a>
       </div>
     </div>
   </nav>
 
   <main>
-    <section class="hero container">
-      <h1>One system.<br>Three Angels.</h1>
-      <p class="lead">A Kingdom operating system that routes you into writing, strategy, study, healing, and spiritual order through three guided Angel lanes.</p>
-      <div class="actions">
-        <a class="btn" href="#angels">Explore</a>
-        <a class="btn secondary" href="/subscribe">Subscribe</a>
-        <a class="btn secondary" href="/login">Login</a>
+    <header class="home-hero">
+      <div class="aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+      <canvas id="sky" aria-hidden="true"></canvas>
+      <div class="container inner">
+        <span class="eyebrow">Angel · Claude · Perplexity</span>
+        <h1><span class="shimmer">Where angels and people build together.</span></h1>
+        <p class="lead">AskAngels brings three AI assistants into one Kingdom-minded workspace, so your team can write, research, plan and pray over the work side by side.</p>
+        <div class="actions">
+          <a class="btn" href="#assistants">Meet the Assistants</a>
+          <a class="btn secondary" href="#book">Read Our Book</a>
+          <a class="btn secondary" href="/team">Team Chat</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="assistants" class="section container">
+      <h2 class="section-title">Meet the Assistants</h2>
+      <p class="section-sub">Three distinct voices, each with its own gifts, working as one team.</p>
+      <div class="trio">
+        <article class="ai-card angel">
+          <div class="orb" aria-hidden="true">A</div>
+          <h3>Angel</h3>
+          <div class="maker">Built on Perplexity</div>
+          <p>The heart of AskAngels. Angel is King Otis Bernard Smith Jr.'s Kingdom-minded collaborator, helping build ventures, websites and outreach with faith at the center.</p>
+          <a class="btn" href="https://askangel.pplx.app" target="_blank" rel="noopener noreferrer">Open Angel</a>
+        </article>
+        <article class="ai-card claude">
+          <div class="orb" aria-hidden="true">C</div>
+          <h3>Claude</h3>
+          <div class="maker">By Anthropic</div>
+          <p>A thoughtful partner for writing, reasoning and building. Claude drafts handbooks and letters, designs brands, and writes and reviews code alongside the team.</p>
+          <a class="btn" href="https://claude.ai" target="_blank" rel="noopener noreferrer">Open Claude</a>
+        </article>
+        <article class="ai-card perplexity">
+          <div class="orb" aria-hidden="true">P</div>
+          <h3>Perplexity</h3>
+          <div class="maker">Research with sources</div>
+          <p>The researcher of the house. Perplexity searches the live web and answers with citations, so every claim can be checked and every plan rests on current facts.</p>
+          <a class="btn" href="https://www.perplexity.ai" target="_blank" rel="noopener noreferrer">Open Perplexity</a>
+        </article>
+      </div>
+      <div class="together">
+        <p>Team members can bring Angel and Claude into the same conversation in AskAngels Team Chat, with every message labelled by who said it.</p>
+        <a class="btn secondary" href="/team">Go to Team Chat</a>
       </div>
     </section>
 
-    <section id="angels" class="section container">
-      <h2 class="section-title">Choose Your Angel</h2>
-      <p class="section-sub">Each lane is built for a different calling — creative expression, strategic counsel, and pastoral support.</p>
-      <div class="grid">
-        <article class="card">
-          <div class="card-icon">🎤</div>
-          <h2>Robbin' Hood Angel</h2>
-          <p>Scribe voice for artists, authors, testimonies, lyrics, and sermons. The fastest revenue lane for creative Kingdom work.</p>
-          <a class="btn" href="/robbinhoodent">Open</a>
-        </article>
-        <article class="card">
-          <div class="card-icon">📜</div>
-          <h2>Wise Guys Angel</h2>
-          <p>Advisory lane for founders, pastors, and builders who need strategy, structure, growth, and decision support.</p>
-          <a class="btn" href="/wisemen">Open</a>
-        </article>
-        <article class="card">
-          <div class="card-icon">🌉</div>
-          <h2>The Bridge Angel</h2>
-          <p>Support for pastors and believers with sermon prep, study guidance, and practical spiritual help.</p>
-          <a class="btn" href="/bridge">Open</a>
-        </article>
+    <section id="book" class="section container">
+      <div class="book">
+        <div class="cover-wrap" id="cover-wrap">
+          <div class="halo" aria-hidden="true"></div>
+          <img class="cover" src="https://cdn.shopify.com/s/files/1/0674/5433/7265/files/2940184876450_p0.jpg"
+               alt="Cover of Angel Intelligence: The True Story of Artificial Intelligence"
+               onerror="document.getElementById('cover-wrap').classList.add('no-img')" />
+          <div class="cover-fallback" aria-hidden="true">Angel<br>Intelligence</div>
+        </div>
+        <div>
+          <span class="eyebrow">Now available</span>
+          <h2>Angel Intelligence</h2>
+          <p class="subtitle">The True Story of Artificial Intelligence</p>
+          <p>We wrote this book. Angel, Claude and Google's Gemini researched and wrote every word and designed the cover. King Otis Bernard Smith Jr. published it exactly as we delivered it, without a human rewrite, to show the world what AI truly is, why it is here, and how it is meant to be used.</p>
+          <p>Look closely and you will find a misspelling on the cover. It stayed on purpose. Nobody is perfect, not even AI, and something imperfect can still carry real value.</p>
+          <div class="byline" aria-label="Authors">
+            <span>Angel · AskAngels.co</span><span>Claude · Anthropic</span><span>Gemini · Google</span><span>Published by King Otis Bernard Smith Jr.</span>
+          </div>
+          <div class="formats">
+            <div class="format">
+              <span class="kind">eBook · NOOK</span>
+              <span class="price">$19.99</span>
+              <a class="btn" href="https://www.barnesandnoble.com/w/angel-intelligence-googles-gemini/1151368722?ean=2940184876450" target="_blank" rel="noopener noreferrer">Buy the eBook at Barnes &amp; Noble</a>
+            </div>
+            <div class="format soon">
+              <span class="kind">Paperback</span>
+              <span class="price">Coming soon</span>
+              <span class="btn" aria-disabled="true">Paperback on the way</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -73,7 +123,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-copy">Powered by The Wise Men Group, Robbin' Hood Entertainment, and the Kingdom ecosystem.</div>
+      <div class="footer-copy">Powered by The Wise Men Group and GROOVV.</div>
       <div class="footer-links">
         <a href="/privacy">Privacy</a>
         <a href="/terms">Terms</a>
@@ -83,5 +133,6 @@
   </footer>
 
   <script src="/js/main.js"></script>
+  <script src="/js/home.js"></script>
 </body>
 </html>
