@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap');
+
 :root {
   --bg: #0a0a0a;
   --panel: #131313;
@@ -161,3 +163,9 @@ dialog h3 { margin: 0 0 6px; }
   .msg { max-width: 94%; }
   .hint { display: none; }
 }
+
+/* Regal typography to match the home page */
+.brand, .auth-card h1, .chat-head h2, dialog h3, .btn, .side-label, .day { font-family: 'Cinzel', Georgia, serif; }
+.brand { letter-spacing: .16em; }
+.btn { letter-spacing: .05em; font-size: .85rem; }
+.meta .name { font-family: 'Cinzel', Georgia, serif; font-size: .8rem; letter-spacing: .03em; }

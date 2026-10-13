@@ -145,3 +145,17 @@
   .aurora span, .shimmer, .orb, .halo, .ai-card:hover::before { animation: none !important; }
   .cover, .ai-card { transition: none; }
 }
+
+/* ---------- Regal typography overrides for the home page ---------- */
+.home-hero h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.2rem, 6.4vw, 4.6rem); line-height: 1.12; max-width: 16ch; letter-spacing: 0.03em; }
+.home-hero .lead { font-size: clamp(1.15rem, 2.2vw, 1.4rem); font-style: italic; color: #d9cba6; }
+.eyebrow, .ai-card .maker, .format .kind { font-family: var(--font-display); }
+.ai-card h3 { font-size: 1.5rem; letter-spacing: 0.06em; }
+.ai-card p, .book p { font-size: 1.15rem; }
+.book h2 { letter-spacing: 0.04em; }
+.book .subtitle { font-size: 1.3rem; }
+.format .price { font-family: var(--font-display); font-size: 1.35rem; }
+.byline span { font-size: .95rem; }
+.cover-fallback { font-family: var(--font-display); }
+.orb { font-family: var(--font-display); }
+.together p { font-size: 1.15rem; font-style: italic; }
